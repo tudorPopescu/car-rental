@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DropdownToggleDirective } from './directives/dropdown-toggle.directive';
 import { CarComponent } from './components/cars/car/car.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
+import { CarListService } from './services/car/car-list.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { CarListComponent } from './components/cars/car-list/car-list.component'
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [CarListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
