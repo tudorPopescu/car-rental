@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CarListService } from 'src/app/services/car/car-list.service';
 import { Car } from 'src/app/interfaces/car/car';
+import { CarListService } from 'src/app/services/car/car-list.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-car-details',
@@ -9,16 +9,19 @@ import { Car } from 'src/app/interfaces/car/car';
   styleUrls: ['./car-details.component.scss']
 })
 export class CarDetailsComponent implements OnInit {
-  cars: Car[];
+  cars: Car;
+  carId: number;
 
   constructor(private clService: CarListService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.cars = [
-      {
-        id: this.route.snapshot.params.id
-      }
-    ]
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.carId = params.id;
+          this.cars = this.clService.getCar(this.carId);
+        }
+      );
   }
 
 }
