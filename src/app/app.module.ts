@@ -7,13 +7,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DropdownToggleDirective } from './directives/dropdown-toggle.directive';
+import { CarComponent } from './components/cars/car/car.component';
+import { CarListComponent } from './components/cars/car-list/car-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    DropdownToggleDirective
+    DropdownToggleDirective,
+    CarComponent,
+    CarListComponent
   ],
   imports: [
     BrowserModule,
