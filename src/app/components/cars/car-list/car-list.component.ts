@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CarListService } from 'src/app/services/car/car-list.service';
 import { Car } from './../../../interfaces/car/car';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-car-list',
@@ -10,7 +11,7 @@ import { Car } from './../../../interfaces/car/car';
 export class CarListComponent implements OnInit {
   cars: Car[] = [];
 
-  constructor(private clService: CarListService) { }
+  constructor(private clService: CarListService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.cars = this.clService.getCarList();

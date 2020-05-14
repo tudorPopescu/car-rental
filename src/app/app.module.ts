@@ -10,6 +10,7 @@ import { DropdownToggleDirective } from './directives/dropdown-toggle.directive'
 import { CarComponent } from './components/cars/car/car.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
 import { CarListService } from './services/car/car-list.service';
+import { CarDetailsComponent } from './components/cars/car-details/car-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarListService } from './services/car/car-list.service';
     HeaderComponent,
     DropdownToggleDirective,
     CarComponent,
-    CarListComponent
+    CarListComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,
