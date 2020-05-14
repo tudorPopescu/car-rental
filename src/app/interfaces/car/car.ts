@@ -1,7 +1,10 @@
 export interface Car {
-  id: number,
+  image: string;
+  id: number;
   name: string;
   model: string;
+  description: string;
+  color: string;
   doors: number;
   engine: string;
   engineType: string;

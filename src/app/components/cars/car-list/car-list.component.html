@@ -1,1 +1,21 @@
-<p>car-list works!</p>
+<div class="row">
+  <div class="col-4 mt-3" *ngFor="let car of cars">
+    <div class="card">
+      <img
+        class="card-img-top"
+        [src]="car.image"
+        [alt]="car.name"
+      />
+
+      <div class="card-body mt-2">
+        <h5 class="card-title text-center">{{car.id}}. {{car.name}}</h5>
+        <p class="card-text">Model: {{car.model}}</p>
+        <p class="card-text">{{car.description}}</p>
+        <hr>
+        <div class="text-center mt-2">
+          <a class="btn btn-primary w-100 details-btn text-uppercase">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
