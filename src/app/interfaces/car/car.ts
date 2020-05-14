@@ -11,4 +11,5 @@ export interface Car {
   power: number;
   consumption: number;
   available: boolean;
+  price: number;
 }

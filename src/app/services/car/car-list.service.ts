@@ -23,7 +23,8 @@ export class CarListService {
         engineType: 'Gas',
         power: 75,
         consumption: 6,
-        available: true
+        available: true,
+        price: 34.99
       },
       {
         image: '../../../assets/images/cars/docker.jpg',
@@ -37,7 +38,8 @@ export class CarListService {
         engineType: 'Gas',
         power: 75,
         consumption: 7,
-        available: true
+        available: true,
+        price: 39.99
       },
       {
         image: '../../../assets/images/cars/docker.jpg',
@@ -51,7 +53,8 @@ export class CarListService {
         engineType: 'Gas',
         power: 75,
         consumption: 7,
-        available: false
+        available: false,
+        price: 39.99
       },
       {
         image: '../../../assets/images/cars/mercedes-vito.jpg',
@@ -65,7 +68,8 @@ export class CarListService {
         engineType: 'Diesel',
         power: 120,
         consumption: 9,
-        available: true
+        available: true,
+        price: 79.99
       }
     ];
 
