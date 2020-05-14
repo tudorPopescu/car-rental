@@ -10,6 +10,15 @@
       <div class="card-body mt-2">
         <h5 class="card-title text-center">{{car.id}}. {{car.name}}</h5>
         <p class="card-text">Model: {{car.model}}</p>
+
+        <p class="card-text">
+          <span *ngIf="car.available; else notAvailable" [ngClass]="'car.available' ? 'available' : ''">
+            In stock
+          </span>
+          <ng-template #notAvailable><span [ngClass]="'!car.available' ? 'unavailable' : ''">Out of Stock</span></ng-template>
+        </p>
+
+        <hr>
         <p class="card-text">{{car.description}}</p>
         <hr>
         <div class="text-center mt-2">
