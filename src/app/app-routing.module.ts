@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'car/list',
     component: CarListComponent
+  },
+  {
+    path: 'car/details/:id',
+    component: CarDetailsComponent
   }
 ];
 
