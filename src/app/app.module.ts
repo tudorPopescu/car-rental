@@ -12,6 +12,7 @@ import { CarListComponent } from './components/cars/car-list/car-list.component'
 import { CarListService } from './services/car/car-list.service';
 import { CarDetailsComponent } from './components/cars/car-details/car-details.component';
 import { ShortTextPipe } from './pipes/short-text.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShortTextPipe } from './pipes/short-text.pipe';
     CarComponent,
     CarListComponent,
     CarDetailsComponent,
-    ShortTextPipe
+    ShortTextPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
