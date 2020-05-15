@@ -1,0 +1,76 @@
+body {
+  color: $black;
+  font-size: $base;
+  font-family: $Raleway;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $black;
+  font-size: $x-large;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $xx-large;
+  }
+}
+
+h2 {
+  color: $black;
+  font-size: $large;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $x-large;
+  }
+}
+
+h3 {
+  color: $black;
+  font-size: $large;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $x-large;
+  }
+}
+
+h3 {
+  color: $black;
+  font-size: $base;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $x-large;
+  }
+}
+
+h4 {
+  color: $black;
+  font-size: $base;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $large;
+  }
+}
+
+a {
+  color: $black;
+  font-size: $small;
+  text-decoration: none;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $base;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  color: $black;
+  font-size: $small;
+  margin-top: 6px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $base;
+  }
+}
