@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Car } from 'src/app/interfaces/car/car';
+import { Car } from 'src/app/interfaces/car/car.interface';
 import { CarListService } from 'src/app/services/car/car-list.service';
 import { ActivatedRoute, Params } from '@angular/router';
 

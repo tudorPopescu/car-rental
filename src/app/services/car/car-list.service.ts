@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Car } from 'src/app/interfaces/car/car';
+import { Car } from 'src/app/interfaces/car/car.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +34,8 @@ export class CarListService {
       power: 75,
       consumption: 7,
       available: true,
-      price: 39.99
+      price: 39.99,
+      detailsImage: '../../../assets/images/cars-details/dacia-dokker-details.png'
     },
     {
       image: '../../../assets/images/cars/docker.jpg',

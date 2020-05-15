@@ -11,6 +11,7 @@ import { CarComponent } from './components/cars/car/car.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
 import { CarListService } from './services/car/car-list.service';
 import { CarDetailsComponent } from './components/cars/car-details/car-details.component';
+import { ShortTextPipe } from './pipes/short-text.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarDetailsComponent } from './components/cars/car-details/car-details.c
     DropdownToggleDirective,
     CarComponent,
     CarListComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    ShortTextPipe
   ],
   imports: [
     BrowserModule,

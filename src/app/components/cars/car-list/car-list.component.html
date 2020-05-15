@@ -20,7 +20,7 @@
         </p>
 
         <hr/>
-        <p class="card-text">{{car.description}}</p>
+        <p class="card-text">{{car.description | shortText}} <a class="read-more" (click)="onShowDetails(car.id)">Read More</a></p>
         <hr/>
 
         <div class="text-center mt-2">

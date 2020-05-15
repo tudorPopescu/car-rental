@@ -16,3 +16,11 @@
   color: red;
   font-weight: bold;
 }
+
+.read-more {
+  font-weight: bold;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
