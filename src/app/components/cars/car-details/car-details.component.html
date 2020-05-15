@@ -1,8 +1,21 @@
-<div *ngIf="cars.detailsImage">
-  <img [src]="cars.detailsImage" alt="cars.name">
+<div class="car-details">
+  <div *ngIf="cars.detailsImage">
+    <img [src]="cars.detailsImage" alt="cars.name" class="details-image">
+  </div>
 </div>
-{{cars.name}}
-{{cars.id}}
-{{cars.model}}
-{{cars.description}}
-{{cars.image}}
+
+<h2 class="text-center">{{cars.name}}</h2>
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs mt-4">
+  <li ngbNavItem>
+    <a ngbNavLink>Specifications</a>
+    <ng-template ngbNavContent>
+      {{cars.model}}
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Details</a>
+    <ng-template ngbNavContent>{{cars.description}}</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
