@@ -1,0 +1,59 @@
+@import '../../../styles.scss';
+
+.title {
+  font-family: $Montserrat-Subrayada-Bold;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 36px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 54px;
+  }
+}
+
+form {
+  margin-bottom: 100px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 150px;
+  }
+}
+
+label {
+  font-family: $Montserrat;
+  letter-spacing: 1px;
+
+  .required {
+    color: $red;
+  }
+}
+
+input {
+  font-family: $Montserrat;
+  letter-spacing: 1px;
+
+  &.invalid {
+    border: 1px solid $red;
+  }
+}
+
+.error {
+  color: $red;
+  display: block;
+  font-family: $Montserrat;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.submit-message {
+  font-family: $Montserrat;
+  font-size: 16px;
+  color: $green;
+  margin-top: 20px;
+  text-align: center;
+}

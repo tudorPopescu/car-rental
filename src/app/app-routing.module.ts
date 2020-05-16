@@ -5,12 +5,21 @@ import { HomeComponent } from './components/home/home.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
 import { CarDetailsComponent } from './components/cars/car-details/car-details.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: 'car/list',
@@ -20,10 +29,6 @@ const routes: Routes = [
     path: 'car/details/:id',
     component: CarDetailsComponent
   },
-  {
-    path: 'about',
-    component: AboutComponent
-  }
 ];
 
 @NgModule({
