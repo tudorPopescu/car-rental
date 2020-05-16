@@ -1,3 +1,31 @@
 <footer>
-  <p>test</p>
+  <div class="container-fluid position-relative">
+    <div class="row">
+      <div class="col-md-6 col-lg-5 contact-wrap">
+        <h2 class="title text-uppercase text-center">Contacts</h2>
+
+        <ul class="contact">
+          <li><fa-icon [icon]="iconMapMarker"></fa-icon> <span>My Company Suceava, Romania 76 Street</span></li>
+          <li><fa-icon [icon]="iconPhone"></fa-icon> <span>(+40) 123 456 789</span></li>
+          <li><fa-icon [icon]="iconEmail"></fa-icon> <span>test@test.com</span></li>
+          <li><fa-icon [icon]="iconClock"></fa-icon> <span>6 Days a week from 9:00 am to 6:00 pm</span></li>
+
+          <ul class="social-icons text-center mt-5">
+            <li><fa-icon [icon]="iconFacebook"></fa-icon></li>
+            <li><fa-icon [icon]="iconTwitter"></fa-icon></li>
+            <li><fa-icon [icon]="iconInstagram"></fa-icon></li>
+            <li><fa-icon [icon]="iconGoogle"></fa-icon></li>
+          </ul>
+        </ul>
+
+        <p class="copy-right">&copy; {{footerDate | date:'yyyy'}} Car Rental. All rights reserved.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-7 g-maps-wrap">
+        <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+          <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
 </footer>

@@ -13,6 +13,8 @@ import { CarListService } from './services/car/car-list.service';
 import { CarDetailsComponent } from './components/cars/car-details/car-details.component';
 import { ShortTextPipe } from './pipes/short-text.pipe';
 import { FooterComponent } from './components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgmCoreModule  } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,11 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA7PP6q31AQmznPL4KsYJV47XyCd8tPpkE'
+    })
   ],
   providers: [CarListService],
   bootstrap: [AppComponent]

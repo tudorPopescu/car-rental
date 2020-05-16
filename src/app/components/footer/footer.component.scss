@@ -1,1 +1,86 @@
 @import '../../../styles.scss';
+
+footer {
+  background-color: $light-black;
+
+  .contact-wrap {
+    @include media-breakpoint-up(lg) {
+      padding-top: 100px;
+    }
+  }
+
+  .title {
+    color: $white;
+    font-family: $Montserrat-Subrayada-Bold;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 36px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 46px;
+      margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 56px;
+    }
+  }
+
+  .contact {
+    color: $white;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+
+    li {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      font-size: 30px;
+      margin-right: 30px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .copy-right {
+    color: $white;
+    font-size: $base;
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+
+  .g-maps-wrap {
+    agm-map {
+      height: 500px;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        height: 600px;
+      }
+    }
+  }
+}
