@@ -15,6 +15,7 @@ import { ShortTextPipe } from './pipes/short-text.pipe';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgmCoreModule  } from '@agm/core';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AgmCoreModule  } from '@agm/core';
     CarListComponent,
     CarDetailsComponent,
     ShortTextPipe,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,10 @@ header {
       font-size: 34px;
     }
 
+    &:hover {
+      text-decoration: none;
+    }
+
     &::before {
       background: $green;
       border-radius: 50%;
@@ -63,6 +67,14 @@ header {
 
       @include media-breakpoint-up(md) {
         font-size: 18px;
+      }
+
+      &.active {
+        color: $green;
+      }
+
+      &:hover {
+        text-decoration: none;
       }
     }
   }

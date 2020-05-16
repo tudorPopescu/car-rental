@@ -1,0 +1,156 @@
+@import '../../../styles.scss';
+
+.section-1 {
+  .text-wrap {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .title {
+    font-family: $Montserrat-Subrayada-Bold;
+    font-size: 30px;
+    margin: 30px 0 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 54px;
+      text-align: left;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 84px;
+    }
+  }
+
+  .subtitle {
+    color: $red;
+    font-family: $Montserrat-Semibold;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .content {
+    font-family: $Montserrat;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .img {
+    height: 100%;
+  }
+}
+
+.section-2 {
+  background-color: $red;
+
+  .text-wrap {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .title {
+    color: $white;
+    font-family: $Montserrat-Subrayada-Bold;
+    font-size: 30px;
+    margin: 30px 0 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 54px;
+      text-align: left;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 84px;
+    }
+  }
+
+  .subtitle {
+    color: $white;
+    font-family: $Montserrat-Semibold;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .content {
+    color: $white;
+    font-family: $Montserrat;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.section-3 {
+  position: relative;
+  background: url('../../../assets/images/about/about-3.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    background: linear-gradient(to bottom, rgba(28, 29, 33, 0) 0%, #1c1d21 100%);
+    height: 100%;
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .title {
+    color: $white;
+    font-family: $Montserrat-Subrayada-Bold;
+    font-size: 30px;
+    margin: 30px 0 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 54px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 84px;
+    }
+  }
+
+  .subtitle {
+    color: $red;
+    font-family: $Montserrat-Semibold;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
