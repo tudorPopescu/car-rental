@@ -9,7 +9,6 @@ export class DropdownToggleDirective {
   constructor() { }
 
   @HostListener('click') toggleOpen() {
-    this.expanded = !this.expanded;
+    return this.expanded = !this.expanded;
   }
-
 }

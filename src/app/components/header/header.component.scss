@@ -1,11 +1,123 @@
-.navbar {
-  border-bottom: 1px solid #c4c4c4;
-}
+@import '../../../styles.scss';
 
-.dropdown {
-  &.show {
+header {
+  background: linear-gradient(to bottom, black 0%, #3e3e3e 100%);
+  padding: 30px 0;
+
+  .brand {
+    color: $white;
+    font-family: $Montserrat-Subrayada-Bold;
+    font-size: 20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 34px;
+    }
+
+    &::before {
+      background: $green;
+      border-radius: 50%;
+      content: "";
+      display: block;
+      font-family: $Raleway;
+      float: left;
+      height: 30px;
+      margin-top: 2px;
+      width: 30px;
+
+      @include media-breakpoint-up(lg) {
+        height: 53px;
+        margin-top: -3px;
+        width: 53px;
+      }
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 2.8;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-top: 1px solid $red;
+    border-bottom: 1px solid $red;
+
+    @include media-breakpoint-up(lg) {
+      border: none;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 0;
+    }
+  }
+
+  .item {
+    a {
+      color: $white;
+      font-family: $Montserrat-Bold;
+      font-size: 14px;
+
+      &:hover {
+        color: $green;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .show {
     .dropdown-menu {
+      background-color: $light-black;
+      display: block;
+      padding: 20px 15px;
+
+      .dropdown-item {
+        font-size: $base;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    hr {
+      background-color: $red;
+    }
+
+    +.navbar-collapse {
       display: block;
     }
   }
+
+  .navbar-collapse {
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
+  .navbar-toggler {
+    border: 1px solid $green;
+    color: $green;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .cars-wrap {
+    &.show {
+      .dropdown-menu {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+          display: block
+        }
+      }
+    }
+  }
+
 }
