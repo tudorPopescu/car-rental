@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule  } from '@agm/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { DropdownToggleDirective } from './directives/dropdown-toggle.directive';
 
@@ -19,6 +20,7 @@ import { ShortTextPipe } from './pipes/short-text.pipe';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ShortTextPipe,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { ContactComponent } from './components/contact/contact.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA7PP6q31AQmznPL4KsYJV47XyCd8tPpkE'
     }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [CarListService],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <header>
   <nav class="row main mx-0 w-100">
     <div class="col-8 col-lg-5 col-xl-7">
-      <a class="brand" routerLink="/">Car Rental</a>
+      <a class="brand" routerLink="/home">Car Rental</a>
     </div>
 
     <div appDropdownToggle class="col-4 text-right d-lg-none">
@@ -12,7 +12,7 @@
 
     <div class="collapse navbar-collapse col-12 col-lg-7 col-xl-5">
       <ul class="items">
-        <li class="item"><a class="text-uppercase" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+        <li class="item"><a class="text-uppercase" routerLink="/home" routerLinkActive="active">Home</a></li>
         <li class="item"><a class="text-uppercase" [routerLink]="['/about']" routerLinkActive="active">About</a></li>
         <li class="item"><a class="text-uppercase">Services</a></li>
         <li class="item cars-wrap position-relative" appDropdownToggle>
