@@ -1,0 +1,13 @@
+<div class="row mx-0">
+  <div class="col-12 col-md-6 col-lg-4 px-0 car-wrap position-relative" *ngFor="let car of cars">
+    <img [src]="car.image" [alt]="car.name" class="w-100"/>
+
+    <div class="text">
+      <h4 class="title text-uppercase">{{car.name}}</h4>
+      <p class="price">Daily price: <s>{{car.price | currency:'EUR'}}</s></p>
+      <p class="price-discount">*Discount: {{car.discountPrice | currency:'EUR'}}</p>
+      <p [ngClass]="'car.stock' ? 'stock' : 'out-of-stock'">{{car.stock ? 'In stock' : ' Out of stock'}}</p>
+      <button class="add-cart" type="button">Add to cart</button>
+    </div>
+  </div>
+</div>
