@@ -1,0 +1,109 @@
+@import '../../../styles.scss';
+
+.red-bg {
+  background-color: $red;
+}
+
+.white-text {
+  color: $white;
+}
+
+.text-wrap {
+  padding: 10px;
+
+  @include media-breakpoint-up(xl) {
+    &::before {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      background: $light-black;
+      content: "";
+      height: 60px;
+      width: 10px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 150px 150px 0;
+  }
+}
+
+.title {
+  font-family: $Montserrat-Subrayada-Bold;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.subtitle {
+  font-family: $Montserrat-Bold;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+.content {
+  font-family: $Montserrat;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
+
+.image-wrap {
+  padding: 0;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  font-family: $Montserrat;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+.ng-fa-icon {
+  color: $red;
+  display: inline-block;
+  margin-right: 10px;
+
+  @include media-breakpoint-up(xl) {
+    margin-right: 20px;
+  }
+}

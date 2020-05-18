@@ -81,6 +81,10 @@ footer {
       @include media-breakpoint-up(md) {
         height: 600px;
       }
+
+      @include media-breakpoint-up(lg) {
+        height: 100%;
+      }
     }
   }
 }
