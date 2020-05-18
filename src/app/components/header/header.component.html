@@ -15,19 +15,7 @@
         <li class="item"><a class="text-uppercase" routerLink="/home" routerLinkActive="active">Home</a></li>
         <li class="item"><a class="text-uppercase" [routerLink]="['/about']" routerLinkActive="active">About</a></li>
         <li class="item"><a class="text-uppercase" [routerLink]="['/service']" routerLinkActive="active">Services</a></li>
-        <li class="item cars-wrap position-relative" appDropdownToggle>
-          <a class="text-uppercase">Cars</a>
-
-          <div class="dropdown-menu animated">
-            <a class="dropdown-item">Convertibles</a>
-            <a class="dropdown-item">Suvs</a>
-            <a class="dropdown-item">Exotic</a>
-            <hr>
-            <a class="dropdown-item">Mercedes</a>
-            <a class="dropdown-item">Lexus</a>
-            <a class="dropdown-item">BMW</a>
-          </div>
-        </li>
+        <li class="item"><a class="text-uppercase" [routerLink]="['/car-list']" routerLinkActive="active">Cars</a></li>
         <li class="item"><a class="text-uppercase" [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacts</a></li>
       </ul>
     </div>

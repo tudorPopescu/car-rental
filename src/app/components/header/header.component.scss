@@ -119,17 +119,4 @@ header {
       outline: none;
     }
   }
-
-  .cars-wrap {
-    &.show {
-      .dropdown-menu {
-        display: none;
-
-        @include media-breakpoint-up(lg) {
-          display: block
-        }
-      }
-    }
-  }
-
 }
