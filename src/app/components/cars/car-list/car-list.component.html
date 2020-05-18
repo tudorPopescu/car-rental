@@ -6,7 +6,7 @@
       <h4 class="title text-uppercase">{{car.name}}</h4>
       <p class="price">Daily price: <s>{{car.price | currency:'EUR'}}</s></p>
       <p class="price-discount">*Discount: {{car.discountPrice | currency:'EUR'}}</p>
-      <p [ngClass]="'car.stock' ? 'stock' : 'out-of-stock'">{{car.stock ? 'In stock' : ' Out of stock'}}</p>
+      <p [ngClass]="{'stock': car.stock, 'out-of-stock' : !car.stock}">{{car.stock ? 'In stock' : ' Out of stock'}}</p>
       <button class="add-cart" type="button">Add to cart</button>
     </div>
   </div>

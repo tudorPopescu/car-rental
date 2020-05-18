@@ -7,9 +7,10 @@ import { FormBuilder, Validators, AbstractControl } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  constructor(private fb: FormBuilder) { }
   phoneDash: string;
   submitValue: string;
+
+  constructor(private fb: FormBuilder) { }
 
   contactForm = this.fb.group({
     userName: [null, [Validators.required, Validators.minLength(8)]],
@@ -41,6 +42,7 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(): string {
+    this.contactForm.reset();
     return this.submitValue = 'Your message has been sent, we will contact you shortly!';
   }
 }

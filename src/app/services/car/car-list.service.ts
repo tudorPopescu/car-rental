@@ -36,7 +36,7 @@ export class CarListService {
       image: '../../../assets/images/cars/aston-martin-db9.jpg',
       price: 3459.99,
       discountPrice: 2159.00,
-      stock: true
+      stock: false
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ export class CarListService {
       image: '../../../assets/images/cars/lexus-lfa.jpg',
       price: 4329.99,
       discountPrice: 2444.00,
-      stock: true
+      stock: false
     }
   ];
 
